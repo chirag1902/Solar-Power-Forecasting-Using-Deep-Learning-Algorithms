@@ -16,16 +16,15 @@ During scaling, data is re-scaled to fall within a predetermined range of values
 Data was reshaped using reshaped in order to fit to the model using pandas library and train and test split of the dataset were created using both pandas and tensorflow inbuilt libraries. A custom function was implemented in order to produce lag in the data with the aid of pandas library. Statsmodel built in function adfuller was also used to perform Agumented Dickey-Fuller test to check for stationary feature before implementing ARIMA and it was concluded that all the features were stationary.
 ### Data Visualization:
 Data Visualization: To construct visualizations like time series plots, scatter plots, and box plots, Python libraries like Matplotlib and Seaborn are utilised. It was done to analyse the trend of the feature along with sesonality and noise. Visualisation is necessary for time series forecasting as it depicts how and when the data is changing and can indicate various usefult patterns.
+![Plot of daily](https://github.com/chirag1902/Solar-Power-Forecasting-Using-Deep-Learning-Algorithms/assets/71887495/3384247a-5cd8-49f5-b05f-e54a4b308bc3)
 
-
-![Plot of daily](https://github.com/chirag1902/Solar-Power-Forecasting-Using-Deep-Learning-Algorithms/assets/71887495/4eba317d-fc2a-4d0f-bf6a-1b8e0c284a46)
-![Plot of daily 1](https://github.com/chirag1902/Solar-Power-Forecasting-Using-Deep-Learning-Algorithms/assets/71887495/c02da040-335e-4357-b95b-c6026c942bf2)
-![Plot of hourly](https://github.com/chirag1902/Solar-Power-Forecasting-Using-Deep-Learning-Algorithms/assets/71887495/2f83a14d-21b6-4079-a95c-0dec57c5a1f4)
+![Plot of daily 1](https://github.com/chirag1902/Solar-Power-Forecasting-Using-Deep-Learning-Algorithms/assets/71887495/644333be-c64a-4027-8df6-3620140b8c5f)
+![Plot of hourly](https://github.com/chirag1902/Solar-Power-Forecasting-Using-Deep-Learning-Algorithms/assets/71887495/c73182ac-1b37-4c59-8260-5b863f2aca65)
 
 From Fig. 2 & 3 it can be inferred that both daily temperature and daily humidity have a little similarity with daily power output pattern whereas it was observed from Fig. 4 & 5 that daily irradiance and daily power show high similarity. Fig. 6 displays the trend analysis of daily power output and it can been that there is a periodic drop in the power out and the daily power output shows strong seasonality which is shown in Fig. 7.
 From Fig. 8 & 9 it can be inferred that both hourly temperature and hourly humidity doesn't have much similarity either with themselves or with hourly power output whereas it was observed from Fig. 10 & 11 that hourly irradiance and hourly power show high similarity. Fig. 6 displays the trend analysis of hourly power output and it can been that there is a drop in the power out towards the end of the year
 
 ## Result
-![Performance](https://github.com/chirag1902/Solar-Power-Forecasting-Using-Deep-Learning-Algorithms/assets/71887495/3ae9fcb6-184d-4e24-aea2-0d35ef4dacf1)
+![Performance](https://github.com/chirag1902/Solar-Power-Forecasting-Using-Deep-Learning-Algorithms/assets/71887495/dddbbb14-1ec5-4f6c-86fb-940b664aad30)
 
 The experimental results of the performance metrics of the different models used in the proposed method are shown in Table 1 and Table 2. We have used Scikit-learn for model evaluation.The results of the experiment showed that for hourly prediction Simple RNN was performing quite well with an R2 score of 0.73, whereas for hourly predictions the results show that the LSTM model is performing the best in predicting the solar power output of the system as it has an R-Squared value of 0.84 and has the lowest RMSE and MSE of 0.84 and 0.09 respectively which explains that the model fits the data well.
